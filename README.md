@@ -85,6 +85,7 @@ git commit -m "initial commit: 开启新项目"
 git push -u origin main  # 第一次推送需加 -u，以后直接 git push
 ```
 
+
 ## 第二部分：日常写代码的循环流程
 ### 1. 在 PyCharm 中编写、调试你的代码。
 ### 2. 状态探测：
@@ -101,6 +102,16 @@ git add . #把所有变动放入暂存区
 git commit -m "feat:增加了什么功能"
 git push        #推送到GitHub
 ```
+#### 4.1. 写commit内容的时候，可以遵守以下约定俗成的前缀
+```bash
+feat: #加了新功能
+fix: #修复了代码或逻辑错误
+docs: #只改了REARMED，注释，笔记等
+style: #不影响代码的改动，格式方面，空格什么的
+refactor: #代码重写
+chore: #杂事，构建过程或者辅助工具的改变，比如改.gitignore
+```
+
 ## 第三部分：回溯
 根据后悔程度选择对应指令
 ### 级别 1：代码改乱了，但还没 add (清空工作区改动)
